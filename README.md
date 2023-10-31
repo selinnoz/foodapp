@@ -7,9 +7,10 @@ cd foodapp
 
 npx expo start
 
--for navigation 
+### -for navigation 
 
 npm install @react-navigation/native
+
 
 
 npx expo install react-native-screens react-native-safe-area-context
@@ -18,3 +19,6 @@ npm install @react-navigation/native-stack
 
 npm install @react-navigation/bottom-tabs
 
+## Home Screen
+
+![75c3f539-fe46-417b-8032-8930649c9361](https://github.com/selinnoz/foodapp/assets/73435487/20a38ad3-a8a7-4355-8e21-fa0f114665cd)
