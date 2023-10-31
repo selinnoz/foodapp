@@ -8,7 +8,7 @@ npx expo start
 
 
 
-for navigation 
+-for navigation 
 
 npm install @react-navigation/native
 
