@@ -12,6 +12,7 @@ import ProfileScreen from './views/profile';
 import CartScreen from './views/cart';
 
 
+
 const Tab = createBottomTabNavigator();
 
 export default function App() {
@@ -22,8 +23,8 @@ export default function App() {
           name="Home"
           component={HomeScreen}
           options={{
-            tabBarIcon:() => (
-              <Entypo name="home" size={24} color="black" />
+            tabBarIcon:({focused}) => (
+              <Entypo name="home" size={24} color={focused ? 'rgb(234, 32, 39)' : 'rgb(189, 189, 189)'} />
             ),
           }}
         />
@@ -31,26 +32,33 @@ export default function App() {
           name="Favorites"
           component={FavoritesScreen}
           options={{
-            tabBarIcon:() => (
-              <MaterialIcons name="favorite-border" size={24} color="black" />
+            tabBarIcon:({focused}) => (
+              <MaterialIcons name="favorite-border" size={24} color={focused ? 'rgb(234, 32, 39)' : 'rgb(189, 189, 189)'} />
             ),
           }}
         />
+
         <Tab.Screen
           name="Cart"
           component={CartScreen}
           options={{
-            tabBarIcon:() => (
-              <FontAwesome5 name="shopping-bag" size={35} color="black" />
+            tabBarIcon: ({focused}) => (
+              <View style={{ width: 60, height: 60, borderRadius: 30, backgroundColor: 'rgb(234, 32, 39)', position: 'relative', top: -10, justifyContent: 'center', alignItems: 'center' }}>
+                <FontAwesome5 name="shopping-bag" size={25} color="white" />
+              </View>
             ),
           }}
         />
+
+
+
+
         <Tab.Screen
           name="Promos"
           component={PromoScreen}
           options={{
-            tabBarIcon:() =>  (
-              <MaterialCommunityIcons name="brightness-percent" size={24} color="black" />
+            tabBarIcon:({focused}) =>  (
+              <MaterialCommunityIcons name="brightness-percent" size={24} color={focused ? 'rgb(234, 32, 39)' : 'rgb(189, 189, 189)'} />
             ),
           }}
         />
@@ -58,8 +66,8 @@ export default function App() {
           name="Profile"
           component={ProfileScreen}
           options={{
-            tabBarIcon:() => (
-              <Ionicons name="person-sharp" size={24} color="black" />
+            tabBarIcon:({focused}) => (
+              <Ionicons name="person-sharp" size={24} color={focused ? 'rgb(234, 32, 39)' : 'rgb(189, 189, 189)'} />
             ),
           }}
         />
