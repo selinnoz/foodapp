@@ -21,4 +21,4 @@ npm install @react-navigation/bottom-tabs
 
 ## Home Screen
 
-![75c3f539-fe46-417b-8032-8930649c9361](https://github.com/selinnoz/foodapp/assets/73435487/20a38ad3-a8a7-4355-8e21-fa0f114665cd)
+<img src=![75c3f539-fe46-417b-8032-8930649c9361](https://github.com/selinnoz/foodapp/assets/73435487/20a38ad3-a8a7-4355-8e21-fa0f114665cd) width=50% height=50%>
