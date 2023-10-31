@@ -36,7 +36,7 @@ const renderItem = ({ item }) => {
 function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 24, color: 'black', fontWeight: 'bold' }}>
+      <Text style={{ fontSize: 24, color: 'black', fontWeight: 'bold' ,paddingTop: 180, }}>
         Categories
         <TouchableOpacity
           onPress={() => {
@@ -56,20 +56,24 @@ function HomeScreen() {
         horizontal={true}
       />
 
-      <Text style={{ fontSize: 24, color: 'black', fontWeight: 'bold' }}>
+      <Text style={{ fontSize: 24, color: 'black', fontWeight: 'bold' ,  paddingBottom: 120,  }}>
         Popular Today
       </Text>
+
+      <Image source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlMDdR4UNQH21QEWAOTtJAfRbkdw8eUYGTmlgcUsFRORUJ7lXs58Kn3hMBdXXw21AqdXQ&usqp=CAU'}}
+       style={{width: 380, height: 200,  paddingBottom: 100}} /> 
 
       <StatusBar style="auto" />
     </View>
   );
 }
+//populer today dikey flatlist olacak
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 180,
-    paddingLeft: 15,
+    
+   paddingLeft: 15,
   },
   image: {
     width: 100,

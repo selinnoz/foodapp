@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import {Entypo, MaterialIcons, FontAwesome5, MaterialCommunityIcons, Ionicons} from '@expo/vector-icons';
+import {Entypo,  AntDesign, FontAwesome5, MaterialCommunityIcons, Ionicons} from '@expo/vector-icons';
 
 import HomeScreen from './views/home';
 import FavoritesScreen from './views/favorites';
@@ -33,13 +33,13 @@ export default function App() {
           component={FavoritesScreen}
           options={{
             tabBarIcon:({focused}) => (
-              <MaterialIcons name="favorite-border" size={24} color={focused ? 'rgb(234, 32, 39)' : 'rgb(189, 189, 189)'} />
+              <AntDesign name="heart" size={24} color={focused ? 'rgb(234, 32, 39)' : 'rgb(189, 189, 189)'} />
             ),
           }}
         />
 
         <Tab.Screen
-          name="Cart"
+          name="Cart" 
           component={CartScreen}
           options={{
             tabBarIcon: ({focused}) => (
@@ -49,9 +49,6 @@ export default function App() {
             ),
           }}
         />
-
-
-
 
         <Tab.Screen
           name="Promos"
