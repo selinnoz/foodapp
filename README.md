@@ -1,12 +1,11 @@
 # foodapp
+
+## Create app and add dependencies
 npx create-expo-app foodapp
 
 cd foodapp
 
 npx expo start
-
-
-
 
 -for navigation 
 
